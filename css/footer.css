@@ -1,0 +1,141 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+footer{
+	background-color: var(--darkgrey);
+}
+
+.footer-container{
+	display: flex;
+	padding: 2rem 2.5rem 1.5rem 2.5rem;
+}
+
+.footer-option{
+	padding:1rem 2rem;
+	transition: .5s;
+}
+.footer-option:hover{
+	background-color: rgba(0,0,0,.5);
+}
+.footer-option:hover>h4
+{
+	color: var(--orange);
+}
+
+.footer-option h4{
+	color: white;
+	font-size: .9rem;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: normal;
+	padding-bottom:.8rem;
+}
+
+.footer-option p{
+	color:#bebec8;
+	font-family: sans-serif;
+	font-size: .9rem;
+}
+
+.footer-option ul li{
+	list-style: none;
+	line-height: 1.5rem;
+}
+
+.footer-option ul li a{
+	text-decoration: none;
+	color:#bebec8; 
+	font-family: sans-serif;
+	font-size: .9rem;
+	text-transform: uppercase;
+}
+.footer-option ul li a:hover{
+	color: var(--orange);
+}
+
+.footer-option:nth-child(1){
+	flex:2;
+	text-align: justify;
+}
+.footer-option:nth-child(1)>p{
+	line-height: 1.4rem;
+}
+
+.footer-option:nth-child(2){
+	flex:1;
+	text-align: center;
+}
+
+.footer-option:nth-child(3){
+	flex:1;
+}
+
+footer .copyright{
+	color: #bebec8;
+	font-family: sans-serif;
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+	padding: .5rem 0;
+	font-size: .8rem;
+}
+
+@media only screen and (max-width:768px)
+{
+	.footer-container{
+		display: block;
+	}
+
+	.footer-option:nth-child(1){
+		text-align: justify;
+		border-bottom: 1px solid white;
+
+	}
+	.footer-option:nth-child(1)>h4{
+		text-align: center;
+	}
+	.footer-option:nth-child(1)>p{
+		line-height: 1.4rem;
+	}
+
+	.footer-option:nth-child(2){
+		display: inline-block;
+		width: 50%;
+	}
+
+	.footer-option:nth-child(3){
+		display: inline-block;
+		width: 49%;
+	}
+}
+
+@media only screen and (max-width:426px)
+{
+	.footer-option:nth-child(2){
+		display: block;
+		width:100%;
+		border-bottom: 1px solid white;
+	}
+
+	.footer-option:nth-child(3){
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 375px)
+{
+	.footer-option:nth-child(1){
+		padding: 1rem;
+	}
+}
+
+@media only screen and (max-width: 320px)
+{
+	.footer-option:nth-child(1){
+		padding:1rem 0;
+	}
+}

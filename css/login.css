@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	background-image: url("../img/login-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:100vw;
+	height:100vh;
+	color: white;
+}
+
+.container fieldset{
+	width:35%;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	padding: 2rem;
+}
+
+fieldset legend{
+	font-size: 2rem;
+	text-align: left;
+}
+
+fieldset .profile-icon{
+	text-align: center;
+	margin-bottom: 1.5rem; 
+}
+
+fieldset form{
+	width: 80%;
+	margin:0 auto;
+}
+form .input-field{
+	display: flex;
+	border-bottom: 1px solid white;
+	margin-bottom: 1rem; 
+}
+.input-field .icon{
+	flex:1;
+}
+.input-field .input{
+	flex:10;
+}
+.input input{
+	width:100%;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 1rem;
+	background-color: rgba(0,0,0,0);
+}
+
+label{
+	margin-right: 1rem;
+	font-size: 1.1rem;
+}
+
+form .position{
+	padding-bottom: 1rem;
+}
+
+form input[type="submit"]{
+	width: 100%;
+	padding: .3rem 0;
+	color: #152535;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+form div a{
+	color: white;
+	text-decoration: none;
+	font-size: .8rem;
+	font-family: sans-serif;
+}
+
+.back-button{
+	position: absolute;
+	top: 90%;
+	left: 8%;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: sans-serif;
+	background-color: white;
+	text-align: center;
+	text-transform: capitalize;
+	line-height: 1.5rem;
+	width: 5rem;
+}
+.back-button a{
+	text-decoration: none;
+	color: #152535;
+}
+
+@media only screen and (max-width:768px)
+{
+	.container fieldset{
+		width:45%;
+	}
+}
+
+@media only screen and (max-width: 426px)
+{
+	.container fieldset{
+		width:80%;
+	}
+}
+
+@media only screen and (max-width: 375px)
+{
+	.container fieldset{
+		padding: 2rem 1rem;
+	}
+}
+
+@media only screen and (max-width: 320px)
+{
+	.container fieldset{
+		padding: 2rem .5rem;
+	}
+}
